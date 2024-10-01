@@ -7,3 +7,8 @@ Linux priv esca techniques
 1) Kernal Exploit
 step 1:) check the version .. to copy the version to search in google find the exploit
 cmd : cat /proc/version
+Step 2) using linux exploit suggester.sh to check the kernal exploit information
+download the file
+give permission
+run
+cmd: ./linux exploit suggester.sh
