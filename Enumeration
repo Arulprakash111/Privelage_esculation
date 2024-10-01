@@ -18,3 +18,7 @@ or
 cmd: ps aux
 Step 9) using evn
 cmd: evn
+Step 10) to check the user path
+cmd: cat /etc/passwd
+Step 10) find hash file
+cmd: sudo cat /etc/shadow
