@@ -1,0 +1,20 @@
+manual
+step 1) connect ssh
+step 2) use whoami command to check the user
+cmd: whoami
+step 3) to check hostname
+cmd: hostname
+step 4) to check os info
+cmd: uname -a
+step 5) to find correct version of linux
+cmd: cat /etc/issue
+step 6) also use 
+cmd: cat /proc/version
+step 7) check the permission 
+cmd: id
+Step 8) check the processer
+cmd: ps -A
+or
+cmd: ps aux
+Step 9) using evn
+cmd: evn
