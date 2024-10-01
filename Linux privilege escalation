@@ -3,3 +3,7 @@ Linux priv esca techniques
 1) Local Accounts
 2) SUID & SUDO permission(binaries)
 3) Kernal Exploit
+
+1) Kernal Exploit
+step 1:) check the version .. to copy the version to search in google find the exploit
+cmd : cat /proc/version
