@@ -1,2 +1,26 @@
 1)Horizontal ---> to get other user privilage
 2)vertical ---> to get our root privelage
+
+
+vertical privilege
+
+step 1) connect ssh to target machine
+step 2) To find sudo permission
+cmd: sudo -l
+Step 3) 2 method of pri esc
+using bash 
+or
+using vi
+
+Step 4: using bash 
+cmd:
+sudo bash  ---> it will change to root user
+
+Step 5: using vi
+cmd
+1)  sudo vi
+2)  esc --> use esc key
+3) :!sh
+4) press enter it will change to root user
+
+
