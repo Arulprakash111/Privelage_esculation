@@ -22,3 +22,10 @@ Step 10) to check the user path
 cmd: cat /etc/passwd
 Step 10) find hash file
 cmd: sudo cat /etc/shadow
+
+Networking
+step 1)to check connect devices
+cmd: netstat -a
+
+find
+step 1)
