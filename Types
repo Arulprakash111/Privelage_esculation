@@ -23,4 +23,12 @@ cmd
 3) :!sh
 4) press enter it will change to root user
 
+Horizontal
+
+step 1) connect ssh
+step 2) find the user list permission
+cmd: 
+cat /etc/passwd
+step 3) using bash to change the other user
+cmd: sudo -u arul bash
 
