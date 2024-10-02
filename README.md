@@ -1,5 +1,5 @@
 ## Linux Privilege Escalation:
-- By [Sai Sathvik](https://linktr.ee/saisathvikruppa)
+- By [Arul Prakash]
 - In order to understand what a particular Linux command does, use: https://www.explainshell.com/
 - Important Resource: https://null-byte.wonderhowto.com/how-to/crack-shadow-hashes-after-getting-root-linux-system-0186386/
 - Privilege escalation is the technique used to escalate our privileges from lower user to higher user(interms of privileges)
