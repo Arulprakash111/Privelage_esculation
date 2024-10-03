@@ -3,3 +3,21 @@ help of netcat
 Step 2) After get the connect to check the system info mation
 cmd: syseminfo
 Step 3) 
+whoami /priv - current user's privileges
+Step 4)
+net users - lists all users
+Step 5)
+net user <username> - lists details of a specific user
+Step 6)
+qwinsta - Other users logged in simultaneously
+Step 7)
+net localgroup - Groups available in system
+step 8)
+net localgroup <group-name> - list members of a specific group
+Step 9)
+systeminfo - gives all the info info about OS
+Step 10)
+hostname - hostname of system
+Step 11)
+findstr /si password *.txt - we're looking for the files which consist 'password' that too in text files
+wmic qfe get Caption,Description,HotFixID,InstalledOn - this tells about the security patches and related information
