@@ -21,6 +21,12 @@ hostname - hostname of system
 Step 11)
 findstr /si password *.txt - we're looking for the files which consist 'password' that too in text files
 wmic qfe get Caption,Description,HotFixID,InstalledOn - this tells about the security patches and related information
+Step 12) Using Winpeas to check the system infom
+cmd: winpeasany.exe systeminfo
+Step 13) Check the windows credentials
+cmd: winpeasany.exe systeminfo
+Step 14) check the windows credentials(it will also show the wifi information)
+cmd: winPEASany.exe windowscreds
 
 
 Reverse shell code or python
