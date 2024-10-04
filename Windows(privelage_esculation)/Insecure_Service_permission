@@ -1,1 +1,5 @@
 Using winpeas.exe
+
+Step 1):To find the Insecure service using winpeas
+cmd:
+winpeas.exe servicesinfo
